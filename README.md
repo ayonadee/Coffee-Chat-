@@ -20,10 +20,11 @@ the name.img/png/jpg)
 
 
 # Work Progress
-
+I used a Trello board for project management,
+please find link attached https://trello.com/b/rCXTle9f/fundamental-project-coffee-chat
 
 # Build 
-
+screenshot of jenkins
 
 # Testing
 
