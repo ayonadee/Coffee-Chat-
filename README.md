@@ -7,7 +7,9 @@ Networking in tech and any field in general is an essential and
 sure-fire way to get your foot in the door and even perhaps 
 jump the queue a couple of steps. However it is often 
 difficult to keep track of the various people and 
-discussions you have along the way. 
+discussions you have along the way, making it tedious to
+circle back to these connects when you're job hunting and would
+like to arrange a coffee chat. 
 
 Introducing... Coffee Chat:
 
@@ -37,6 +39,6 @@ screenshot of jenkins
 # Testing
 
 # License 
-
+This project is licensed under the terms of the MIT license
 
 #
