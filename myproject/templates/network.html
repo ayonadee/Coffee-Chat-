@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="Your description goes here">
+    	<meta name="keywords" content="one, two, three">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>Blank Template</title>
+
+		<!-- external CSS link -->
+		<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/normalize.css')}}">
+		<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/stylen.css')}}">
+	</head>
+	<body>
+		<header>
+			<ul>
+				<li><a href="{{url_for('home')}}"> Home </a></li>
+				<li><a href="{{url_for('contacts')}}"> Contacts </a></li>
+				<li><form class="" action="home.html" method="post">
+					<input type="text" name="" value="search"> </form></li>
+					<li style= "float:right"> <h2> Coffee Chat</li> </h2>
+			</ul>
+	 	</header>
+
+			<section>
+        <div class="container">
+            <form method='POST'action="">
+
+            <div class="row">
+              <div class="col-25">
+                <label for="fname">First Name</label>
+              </div>
+              <div class="col-75">
+                {{form.first_name}}
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <label for="lname">Last Name</label>
+              </div>
+              <div class="col-75">
+				{{form.last_name}} 
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <label for="email">Email Address</label>
+              </div>
+              <div class="col-75">
+				{{form.email_address}}
+              </div>
+						</div>
+						<div class="row">
+							<div class="col-25">
+								<label for="contact">Contact Number</label>
+							</div>
+							<div class="col-75">
+							{{form.contact_number}}
+              </div>
+						</div>
+						<div class="row">
+							<div class="col-25">
+								<label for="company">Company</label>
+							</div>
+							<div class="col-75">
+							{{form.company}}
+                
+                </div>
+						</div>
+						<div class="row">
+							<div class="col-25">
+								<label for="social media">Social Media</label>
+							</div>
+							<div class="col-75">
+						    {{form.social_media_account}}
+              </div>
+						</div>
+						<div class="row">
+							<div class="col-25">
+								<label for="position">Position</label>
+							</div>
+						</div>
+						<div class="col-75">
+						{{form.position}}	
+						</div>
+						<div class="row">
+							<div class="col-25">
+								<label for="event">Event</label>
+							</div>
+						</div>
+						<div class="col-75">
+						{{form.event}}
+						</div>
+						<div class="row">
+							<div class="col-25">
+							  <label for="date">Date</label>
+							</div>
+							<div class="col-75">
+							{{form.date}}  
+							</div>
+            <div class="row">
+              <div class="col-25">
+                <label for="spark">Spark</label>
+              </div>
+              <div class="col-75">
+			  {{form.spark}}
+              </div>
+            </div>
+			<div class="row">
+				<div class="col-25">
+				  <label for="user_id">User ID</label>
+				</div>
+				<div class="col-75">
+				{{form.user_id}}
+				</div>
+			</div>
+            <div class="row">
+			{{form.submit}} 
+            </div>
+            </form>
+          </div>
+			</section>
+	</body>
+</html>

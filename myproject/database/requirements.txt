@@ -1,0 +1,11 @@
+Flask
+Flask-SQLAlchemy== 2.1.0
+SQLAlchemy
+pymysql
+flask-wtf
+wtforms
+Jinja2
+Werkzeug
+pytest
+pytest-cov
+flask-testing

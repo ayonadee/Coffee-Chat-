@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="Your description goes here">
+    	<meta name="keywords" content="one, two, three">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>list of contacts</title>
+
+		<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/normalize.css')}}">
+		<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/stylec.css')}}">
+	</head>
+	<body> 
+		<header>
+			<ul>
+				<li><a href="{{url_for('home')}}"> Home </a></li>
+				<li><a href="{{url_for('network')}}"> Networks </a></li>
+				<li style= "float:right"> <h2> Coffee Chat</li> </h2>
+			</ul>
+		</header>
+		<div>
+			<table style="width:50%">
+			{% for n in networks %}
+			<tr>
+			<td>{{n.first_name}}</td>
+			<td>{{n.last_name}}</td>
+			<td>{{n.email_address}}</td>
+			<td>{{n.company}}</td>
+			<td>{{n.position}}</td>
+			<td>{{n.social_media_account}}</td>
+			<td>{{n.contact_number}}</td>
+			<td>{{n.event}}</td>
+			<td>{{n.spark}}</td>
+			<td>{{n.date}}</td>
+			<td>{{n.submit}}</td>
+			</tr> {% endfor %}
+			</table>
+		</div>
+		
+		<br><a>href="{{url_for('contacts')}}"> type="button"> Add new Contact</a></br>	
+  </body>
+</html>
