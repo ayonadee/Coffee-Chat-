@@ -11,15 +11,17 @@
 		<!-- external CSS link -->
 		<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/normalize.css')}}">
 		<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/stylen.css')}}">
+		<link rel="icon" href="data:;base64,=">
 	</head>
 	<body>
 		<header>
 			<ul>
 				<li><a href="{{url_for('home')}}"> Home </a></li>
 				<li><a href="{{url_for('contacts')}}"> Contacts </a></li>
+				<li><a href="{{url_for('users')}}"> Users </a></li>
 				<li><form class="" action="home.html" method="post">
 					<input type="text" name="" value="search"> </form></li>
-					<li style= "float:right"> <h2> Coffee Chat</li> </h2>
+				<li style= "float:right"> <h2> Coffee Chat</li> </h2>
 			</ul>
 	 	</header>
 
@@ -97,7 +99,7 @@
 							  <label for="date">Date</label>
 							</div>
 							<div class="col-75">
-							{{form.date}}  
+							{{form.meeting_date}}  
 							</div>
             <div class="row">
               <div class="col-25">
@@ -109,7 +111,7 @@
             </div>
 			<div class="row">
 				<div class="col-25">
-				  <label for="user_id">User ID</label>
+				  <label for="user_id">User_id</label>
 				</div>
 				<div class="col-75">
 				{{form.user_id}}
@@ -118,6 +120,7 @@
             <div class="row">
 			{{form.submit}} 
             </div>
+			{{ message }}
             </form>
           </div>
 			</section>

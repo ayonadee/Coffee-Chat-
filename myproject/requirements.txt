@@ -1,6 +1,6 @@
 Flask
 Flask-SQLAlchemy== 2.1.0
-SQLAlchemy
+SQLAlchemy<1.4
 pymysql
 flask-wtf
 wtforms
