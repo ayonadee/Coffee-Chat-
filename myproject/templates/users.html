@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="Your description goes here">
+    	<meta name="keywords" content="one, two, three">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>list of users</title>
+
+		<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/normalize.css')}}">
+		<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/styleu.css')}}">
+		<link rel="icon" href="data:;base64,=">
+	</head>
+	<body> 
+		<header>
+			<ul>
+                <li><a href="{{url_for('home')}}"> Home </a></li>
+				<li><a href="{{url_for('users')}}"> Users </a></li>
+                <li><a href="{{url_for('contacts')}}"> Contacts </a></li>
+				<li style= "float:right"> <h2> Coffee Chat</li> </h2>
+			</ul>
+		</header>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        
+        <section>
+            <div class="container">
+                <form method='POST'action="">
+    
+                <div class="row">
+                  <div class="col-25">
+                    <label for="fname">First Name</label>
+                  </div>
+                  <div class="col-75">
+                    {{form.first_name}}
+                  </div>
+                </div>
+                <br>
+                <div class="row">
+                  <div class="col-25">
+                    <label for="lname">Last Name</label>
+                  </div>
+                  <div class="col-75">
+                    {{form.last_name}} 
+                  </div>
+                </div>
+                <br>
+                <br>
+                <div class="row">
+                {{form.submit}} 
+                </div>
+                {{ message }}
+                </form>
+              </div>
+        </section>
+			<br>
+      <br>
+      <br>
+      <br>
+		<div>
+			<table style="width:100%">
+				<caption> Users</caption>
+					<thead>
+						<tr>
+							<th>First name</th>
+							<th>Last name</th>
+              <th>Add Contact</th>
+						</tr>
+					</thead>
+					<tbody>
+						{% for u in users %}
+						<tr style="text-align:right">
+							<td>{{u.first_name}}</td>
+							<td>{{u.last_name}}</td>
+              <td><a href='/network/{{u.id}}' type="button">Add new Contact</a></td>	
+						</tr> {% endfor %}
+					</tbody>
+			</table>
+		</div>
+    </body>
+</html>
