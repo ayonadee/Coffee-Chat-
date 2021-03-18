@@ -25,6 +25,7 @@ have encountered at networking events, meetups,
 # Architecture - Flow Chart
 
 Entity relationship diagram:
+
 ![](assets/Entity relationship diagram.jpg)
 
 
@@ -33,7 +34,15 @@ I used a Trello board for project management,
 please find link attached https://trello.com/b/rCXTle9f/fundamental-project-coffee-chat
 
 # Build 
-screenshot of jenkins
+
+Setting the jenkins job to download this github repo where my code is:
+
+![](assets/jenkins build.jpg)
+
+The build script in the CI Server Jenkins using Flask Gunicorn:
+
+![](assets/jenkins script.jpg)
+
 
 # Tech Stack
 The tools and requirements used for this application to run are as follows:
@@ -60,7 +69,9 @@ See requirements.txt file for a full list of all requirements
 
 Testing was done with Pytest and Flask Testing
 
-Test Coverage:
+Test Coverage: 99%
+
+![](Test/Test Coverage.jpg)
 
 # Contributors
 
@@ -73,6 +84,8 @@ https://www.w3schools.com/
 https://collisionf.com/
 
 https://www.monster.co.uk/career-advice/article/what-is-networking-and-how-do-i-do-it
+
+https://www.youtube.com/watch?v=SV1eSbAWfWQ&list=PLBf-QcbaigsKwq3k2YEBQS17xUwfOA3O3&index=10
 
 # License 
 This project is licensed under the terms of the MIT license
