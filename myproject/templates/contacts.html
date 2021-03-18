@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="Your description goes here">
+    	<meta name="keywords" content="one, two, three">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>list of contacts</title>
+
+		<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/normalize.css')}}">
+		<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/stylec.css')}}">
+		<link rel="icon" href="data:;base64,=">
+	</head>
+	<body> 
+		<header>
+			<ul>
+				<li><a href="{{url_for('home')}}"> Home </a></li>
+				<li><a href="{{url_for('users')}}"> Users </a></li>
+				<li style= "float:right"> <h2> Coffee Chat</li> </h2>
+			</ul>
+		</header>
+		<br>
+        <br>
+        <br>
+        <br>
+		<br>
+		<br>
+		<br>
+			
+		<div>
+			<table style="width:100%">
+				<caption>My Contacts</caption>
+					<thead>
+						<tr>
+							<th>First name</th>
+							<th>Last name</th>
+							<th>Email_address</th>
+							<th>Company</th>
+							<th>Position</th>
+							<th>Social Media Accounts</th>
+							<th>Contact Number</th>
+							<th>Event</th>
+							<th>Spark</th>
+							<th>Meeting Date</th>
+							<th>Delete Contact</th>
+							<th>Edit Contact</th>
+						</tr>
+					</thead>
+					<tbody>
+						{% for n in networks %}
+						<tr style="text-align:right">
+							<td>{{n.first_name}}</td>
+							<td>{{n.last_name}}</td>
+							<td>{{n.email_address}}</td>
+							<td>{{n.company}}</td>
+							<td>{{n.position}}</td>
+							<td>{{n.social_media_account}}</td>
+							<td>{{n.contact_number}}</td>
+							<td>{{n.event}}</td>
+							<td>{{n.spark}}</td>
+							<td>{{n.meeting_date}}</td>
+							<td><a href="/deletenetwork/{{n.id}}"type="button">Delete this contact</a></td>
+							<td><a href="/update/{{n.id}}"type="button">Edit this contact</a></td>
+						</tr> {% endfor %}
+					</tbody>
+			</table>
+		</div>
+    </body>
+</html>

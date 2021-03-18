@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+  	<meta charset="utf-8">
+  	<meta name="description" content="Your description goes here">
+  	<meta name="keywords" content="one, two, three">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>Blank Template</title>
+
+		<!-- external CSS link -->		
+		<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/style.css')}}">
+		<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/normalize.css')}}">
+	 
+	</head>
+	<body>
+		<header>
+			<ul>
+				<li><a href="{{url_for('home')}}"> Home </a></li>
+				<li><a href="https://collisionconf.com/networking?utm_source=bing&utm_medium=cpc&utm_campaign=405791834&utm_content=1157786469933523&utm_term=networking%20event&msclkid=3ca695a47d3417919368f5e0483cdb0f">Events</a></li>
+				<li><a href="{{url_for('contacts')}}"> Contacts </a></li>
+				<li><a href="{{url_for('users')}}"> Users </a></li>
+				<!-- <li><form class="" action="index.html" method="post">
+					<input type="text" name="" value="search"> </form></li> -->
+					<li style= "float:right"> <h2> Coffee Chat</li> </h2>
+			</ul>
+	 	</header>
+		<main>
+			<section>
+				<img src="{{url_for('static', filename='coffeefirst.jpg')}}" alt="coffee" width="490" height="500">
+			</section>
+			<section>
+				<h1>For professional networking, build and store your network.</h1>
+				<p>Gradually build up and store a list of contacts and details surrounding people you encounter
+				  along the way,
+					in an effort to create long lasting relationships with them. No more unsustainable calling cards and the hassle of finding and keeping numerous of them.</p>
+
+				<h1> Tips  </h1>
+					<p> It is important to maintain steady communication with your contacts so that you can call on them when you are in need, this is helpful for career development. You might want to send out the occasional friendly e-mail and invite them out for a coffee for further discussions
+						, what better way to hang out with like-minded people than to involve food or a drink.
+
+						<h3> Do: </h3>
+						 <ol>
+              <li> Keep your goals in mind when meeting people.</li>
+							<li> Take a friend or someone with neworking experience when getting started.</li>
+							<li> Attend networking events in your industry and local area(Click on Events in the navigation bar to be redirected to where you can find events)</li>
+							<li> Remember that networking is a two way street so be prepared to offer assistance.</li>
+             </ol>
+					 </p>
+
+             <p>
+
+						   <h3> Don't:</h3>
+						    	 <ol>
+											<li> Only build contacts for short term help.</li>
+											<li> Invest your time in contacts that are not mutually beneficial.</li>
+											<li> Divulge confidential information in discussions.</li>
+										
+						  		 </ol>
+							</p>
+
+			</section>
+		</main>
+		</div>
+	</body>
+</html>
