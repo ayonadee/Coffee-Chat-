@@ -41,7 +41,7 @@ Setting the jenkins job to download this github repo where my code is:
 
 The build script in the CI Server Jenkins using Flask Gunicorn:
 
-![](assets/jenkinsscript.jpg)
+![](assets/jenkinsskript.jpg)
 
 
 # Tech Stack
