@@ -69,6 +69,14 @@ See requirements.txt file for a full list of all requirements
 
 Testing was done with Pytest and Flask Testing
 
+Test analysis:
+
+.All routes were tested for Read, Add, Update and Delete.
+
+.Ensuring that pages with redirects are being redirected.
+
+.Post and Get requests added data and responded to get requests.
+
 Test Coverage: 99%
 
 ![](Test/testcov.jpg)
