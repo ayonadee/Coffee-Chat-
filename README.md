@@ -26,7 +26,7 @@ have encountered at networking events, meetups,
 
 Entity relationship diagram:
 
-![](assets/Entity relationship diagram.jpg)
+![](assets/entityrelationshipdiagram.jpg)
 
 
 # Work Progress
@@ -37,25 +37,25 @@ please find link attached https://trello.com/b/rCXTle9f/fundamental-project-coff
 
 Setting the jenkins job to download this github repo where my code is:
 
-![](assets/jenkins build.jpg)
+![](assets/jenkinsbuild.jpg)
 
 The build script in the CI Server Jenkins using Flask Gunicorn:
 
-![](assets/jenkins script.jpg)
+![](assets/jenkinsskript.jpg)
 
 
 # Tech Stack
 The tools and requirements used for this application to run are as follows:
 
-☕︎ Database/Cloud server - GCP(Compute engine)
+☕︎ Database/Cloud server - GCP(Compute engine) GCP SQL Server
 
-☕︎ Pytest and Flask Testing for Unit Testing
+☕︎ Pytest for Unit Testing with Python
 
 ☕︎ Programming Language - Python (Flask micro-framework)
 
 ☕︎ CI Server - Jenkins
 
-☕Markup Languages for Front-end -  HTML
+☕Markup Languages for Front-end -  Flask(HTML)
 
 ☕︎ CSS
 
@@ -71,7 +71,7 @@ Testing was done with Pytest and Flask Testing
 
 Test Coverage: 99%
 
-![](Test/Test Coverage.jpg)
+![](Test/testcov.jpg)
 
 # Contributors
 
