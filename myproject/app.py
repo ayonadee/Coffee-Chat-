@@ -129,7 +129,7 @@ def update(id):
         form.event.data = first_network.event
         form.spark.data = first_network.spark
         form.meeting_date.data = first_network.meeting_date
-        return render_template('network.html', form=form, users=users, message1=error) 
+    return render_template('network.html', form=form, users=users, message1=error) 
    
 
 if __name__ == '__main__':
