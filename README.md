@@ -75,11 +75,27 @@ Test analysis:
 
 .Ensuring that pages with redirects are being redirected.
 
-.Post and Get requests added data and responded to get requests.
+.Post requests added data and Get requests responded to get requests with a successful status code.
 
 Test Coverage: 99%
 
 ![](Test/testcov.jpg)
+
+
+# Risk Assessment 
+
+![](assets/riskassessment.jpg)
+
+
+The reason why CSRF attacks are low risk is because
+Flask-WTF has built in protection and was set up
+via a form.hidden_tag() which was included 
+in any page which contains a post method 
+and is included in the front-end html as well as a 
+SECRET_KEY  which was 
+ defined in the back end as an app.config used to
+ encrypt data during transit. 
+ 
 
 # Contributors
 
@@ -94,6 +110,8 @@ https://collisionf.com/
 https://www.monster.co.uk/career-advice/article/what-is-networking-and-how-do-i-do-it
 
 https://www.youtube.com/watch?v=SV1eSbAWfWQ&list=PLBf-QcbaigsKwq3k2YEBQS17xUwfOA3O3&index=10
+
+QA community DevOps learning
 
 # License 
 This project is licensed under the terms of the MIT license
