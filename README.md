@@ -99,7 +99,7 @@ SECRET_KEY  which was
 
 # Contributors
 
-Special thanks to Dara Oladopo, 
+Special thanks to Dara Oladapo, 
 whose guidance was immensely helpful.
 
 # References
